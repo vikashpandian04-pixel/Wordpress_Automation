@@ -910,7 +910,7 @@ public class websiteTesting {
                 List<WebElement> buttons = driver.findElements(By.cssSelector(selector));
                 for (WebElement button : buttons) {
                     if (button.isDisplayed() && button.isEnabled()) {
-                        jsExecutor.executeScript("arguments[0].click();", button);
+                        //jsExecutor.executeScript("arguments[0].click();", button);
                         System.out.println("    Clicked submit button");
                         return true;
                     }
